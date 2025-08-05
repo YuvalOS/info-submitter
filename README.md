@@ -37,6 +37,71 @@ The `info-submitter` project is a web application that allows users to submit, d
    pip install -r requirements.txt
    ```
 
+### Setting Up a Virtual Environment
+
+1. Navigate to the backend directory:
+   ```bash
+   cd src/server
+   ```
+
+2. Create a virtual environment:
+   ```bash
+   python -m venv venv
+   ```
+
+3. Activate the virtual environment:
+   ```bash
+   venv\Scripts\activate
+   ```
+
+4. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. Deactivate the virtual environment when done:
+   ```bash
+   deactivate
+   ```
+
+### Using the Pre-Configured Virtual Environment
+
+1. Navigate to the backend directory:
+   ```powershell
+   cd src/server
+   ```
+
+2. Activate the virtual environment:
+   ```powershell
+   .\venv\Scripts\Activate
+   ```
+
+3. Run the application or any required commands within the virtual environment.
+
+4. Deactivate the virtual environment when done:
+   ```powershell
+   deactivate
+   ```
+
+### Using the Pre-Configured Virtual Environment (Bash)
+
+1. Navigate to the backend directory:
+   ```bash
+   cd src/server
+   ```
+
+2. Activate the virtual environment:
+   ```bash
+   source venv/bin/activate
+   ```
+
+3. Run the application or any required commands within the virtual environment.
+
+4. Deactivate the virtual environment when done:
+   ```bash
+   deactivate
+   ```
+
 ## Running the Application
 
 ### Backend
