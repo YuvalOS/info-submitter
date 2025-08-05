@@ -25,10 +25,9 @@ def init_db():
 @app.route('/submit', methods=['POST'])
 def submit_data():
     try:
-        try:
-            json.loads(request.get_json()["data"])
-        except Exception:
-            return jsonify({'error': 'Request body is not valid JSON'}), 400
+        json.loads(request.get_json()["data"])
+    except Exception:
+        return jsonify({'error': 'Request body is not valid JSON'}), 400
     except (ValueError, TypeError):
         return jsonify({'error': 'Request body is not valid JSON'}), 400
     if not request.is_json:
